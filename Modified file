@@ -1,0 +1,4 @@
+ modified:   minix/include/minix/callnr.h
+ modified:   minix/servers/pm/misc.c
+ modified:   minix/servers/pm/proto.h
+ modified:   minix/servers/pm/table.c
