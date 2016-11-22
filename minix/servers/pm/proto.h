@@ -47,6 +47,19 @@ int do_svrctl(void);
 int do_getsetpriority(void);
 int do_getrusage(void);
 
+/*Semaforo*/
+struct Node;
+struct Queue;
+struct Semaphore;
+int do_sem_create(void);
+int do_sem_down(void);
+int do_sem_up(void);
+int do_sem_terminate(void);
+struct Queue* init_queue();
+int dequeue(struct Queue* q);
+void enqueue(struct Queue* q, int process);
+int queue_size(struct Queue* q);
+
 /* schedule.c */
 void sched_init(void);
 int sched_start_user(endpoint_t ep, struct mproc *rmp);
